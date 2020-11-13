@@ -18,7 +18,7 @@
     <li>Annotations are clearly visible and draw viewer's attention appropriately. </li>
     <li>Appropriate color scales are used and the legend is clearly labeled and visible with an appropriately sized font</li>
 </ul>
-<svg width="1100" height="800"></svg>
+<svg width="1200" height="800"></svg>
 <script>
     // source
     var abbrs = {
@@ -76,7 +76,7 @@
     };
     var keys = ["male","female"];
     var margin = ({top: 10, right: 10, bottom: 20, left: 40});
-    var width = 1000;
+    var width = 1100;
     var height = 700;
     const tip = d3.tip().html(d=> d.value);
     var svg = d3.select("svg"),
@@ -147,7 +147,7 @@
         g.append("text")
         .attr("x", width/2 - 100)
         .attr("y", 10)
-        .attr("font-size", "30px")
+        .attr("font-size", "20px")
         .text("Bar Chart for Cancer rate");
         g.append("g")
             .attr("class", "axis")
@@ -204,7 +204,7 @@
                 connector: {
                     end: "arrow"
                 },
-                x: 940,
+                x: 1035,
                 y: 50,
                 dy: 0,
                 dx: -150
@@ -220,7 +220,7 @@
                 connector: {
                     end: "arrow"
                 },
-                x: 475,
+                x: 525,
                 y: 145,
                 dy: -50,
                 dx: -70
@@ -236,7 +236,7 @@
                 connector: {
                     end: "arrow"
                 },
-                x: 679,
+                x: 745,
                 y: 400,
                 dy: -300,
                 dx: 0
@@ -252,9 +252,9 @@
                 connector: {
                     end: "arrow"
                 },
-                x: 670,
+                x: 738,
                 y: 415,
-                nx: 590,
+                nx: 650,
                 ny: 170
             }].map(function(d){ d.color = "rgba(0,0,0,0.62)"; return d});
 
