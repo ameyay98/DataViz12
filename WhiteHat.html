@@ -10,15 +10,15 @@
 </head>
 
 <body>
-<h2 style="font-size: x-large"><i> White Hat Visualization : </i></h2>
-<ul style="font-size: large">
+<h2 style="font-size: large"><i> White Hat Visualization : </i></h2>
+<ul style="font-size: medium">
     <li>The visualization are clear to understand and infer from for the desired audience. </li>
     <li>Any data transformation (like filter, etc.) are clearly and transparently explained. </li>
     <li>The sources of the data, including potential bias, is communicated. </li>
     <li>Annotations are clearly visible and draw viewer's attention appropriately. </li>
     <li>Appropriate color scales are used and the legend is clearly labeled and visible with an appropriately sized font</li>
 </ul>
-<svg width="2000" height="800"></svg>
+<svg width="1500" height="800"></svg>
 <script>
     // source
     var abbrs = {
@@ -76,7 +76,7 @@
     };
     var keys = ["male","female"];
     var margin = ({top: 10, right: 10, bottom: 20, left: 40});
-    var width = 1500;
+    var width = 1400;
     var height = 700;
     const tip = d3.tip().html(d=> d.value);
     var svg = d3.select("svg"),
@@ -204,7 +204,7 @@
                 connector: {
                     end: "arrow"
                 },
-                x: 1420,
+                x: 1320,
                 y: 50,
                 dy: 0,
                 dx: -210
@@ -220,7 +220,7 @@
                 connector: {
                     end: "arrow"
                 },
-                x: 710,
+                x: 670,
                 y: 145,
                 dy: -50,
                 dx: -70
@@ -236,7 +236,7 @@
                 connector: {
                     end: "arrow"
                 },
-                x: 1020,
+                x: 950,
                 y: 400,
                 dy: -300,
                 dx: 0
@@ -252,9 +252,9 @@
                 connector: {
                     end: "arrow"
                 },
-                x: 1010,
+                x: 940,
                 y: 415,
-                nx: 900,
+                nx: 850,
                 ny: 170
             }].map(function(d){ d.color = "rgba(0,0,0,0.62)"; return d});
 
@@ -274,8 +274,8 @@
 
 </script>
 
-<h2 style="font-size: x-large">For the above visualization : </h2>
-<ul style="font-size: large">
+<h2 style="font-size: large">For the above visualization : </h2>
+<ul style="font-size: medium">
     <li>Data source : <a href="https://corgis-edu.github.io/corgis/csv/cancer/">Cancer</a> dataset </li>
     <li>The visualization clearly states the Cancer rate for the age group 18-45 for men and women accordingly. </li>
     <li>Annotations are clearly visible and draw viewer's attention appropriately for the respective gender rate which are with highest risk and lowest risks. </li>
